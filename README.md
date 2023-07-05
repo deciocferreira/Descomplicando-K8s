@@ -4,5 +4,5 @@
 Leitura complementar resumida da prática está neste outro repo: [KubernetesLab](https://github.com/deciocferreira/KubernetesLab/tree/main)
 
 ## <a name=“section”><a/> Conteúdo 
-[Day-1](#day-1)
+[Day-1](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-1/day1.md#-k8s-)
 
