@@ -1,10 +1,9 @@
-<h1> Prática Day-1 no Kubernetes ☸️ </h1> 
+<h1> Hands-on Kubernetes ☸️ </h1> 
 
 - Instalação Kubectl (API de conexão ao Kubernetes)
 - Instalação Kind(kubernetes in Docker) no GNU/Linux
-- Criação de um Cluster com 1 Control-plane e dois Workers
-- Criação de um Pod com imagem do Nginx
-- Criação de um template de um Pod
+- Criação de um Cluster com 1 Control-plane e 2 Workers
+- Criação de um Pod com imagem do Nginx (manifesto arquivo yaml)
 - Exposição do Pod
 - Execução de comandos padrão do Kubectl referentes a administração do Cluster K8s
 - Deleção dos recursos criados
@@ -55,7 +54,7 @@ Kind create Cluster --name main --config k8s-cluster.yaml
 
 <p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/3b21bc86-7861-4e5e-b814-483ea033a1c5" width="850" height="400"> </p>
 
-## Criação e execução de um Pod com imagem do Nginx
+## Criação e execução de um Pod com imagem do Nginx (manifesto arquivo yaml)
 
 ~~~
 kubectl run pod-nginx --image deciocferreira/nginx --dry-run=client -o yaml > pod-template.yaml
@@ -68,6 +67,10 @@ kubectl apply -f pod-template.yaml
 ~~~
 
 <p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/50ca62fc-9120-492f-9984-1780e7a64628" width="800" height="200"> </p>
+
+## Expor o pod
+
+
 
 ## Resultado esperado
 Até aqui é esperado que o conhecimento esteja mais fixado em como é composta a aquitetura do K8s e como é utilizada a API do K8s *Kubectl* para criação e manipulação de recursos dentro do Cluster.
