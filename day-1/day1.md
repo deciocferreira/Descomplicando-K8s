@@ -52,7 +52,7 @@ vim k8s-cluster
 Kind create Cluster --name main --config k8s-cluster.yaml
 ~~~
 
-<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/3b21bc86-7861-4e5e-b814-483ea033a1c5" width="850" height="400"> </p>
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/3b21bc86-7861-4e5e-b814-483ea033a1c5" width="900" height="350"> </p>
 
 ## Criação e execução de um Pod com imagem do Nginx (manifesto arquivo yaml)
 
@@ -60,7 +60,7 @@ Kind create Cluster --name main --config k8s-cluster.yaml
 kubectl run pod-nginx --image deciocferreira/nginx --dry-run=client -o yaml > pod-template.yaml
 ~~~
 
-<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/e09bc690-4db5-425b-8824-9d2d8ae526c5" width="850" height="400"> </p>
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/e09bc690-4db5-425b-8824-9d2d8ae526c5" width="900" height="350"> </p>
 
 ~~~
 kubectl apply -f pod-template.yaml
@@ -68,9 +68,38 @@ kubectl apply -f pod-template.yaml
 
 <p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/50ca62fc-9120-492f-9984-1780e7a64628" width="800" height="200"> </p>
 
-## Expor o pod
+## Expondo o pod e verificando o serviço criado
 
+~~~~
+kubectl expose pod pod-nginx
 
+kubectl get services
+~~~~
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/1f31ad2b-120c-43b8-906f-d97f5a6e137f" width="600" height="200"> </p>
+
+## Execução de comandos padrão do Kubectl referentes a administração do Cluster K8s
+
+~~~~
+kubectl get namespaces
+kubectl get pods
+kubectl get pods -A
+kubectl get services
+kubectl get nodes
+~~~~
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/dd200d90-0640-4b75-85ad-e45187bffb57" width="800" height="450"> </p>
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/1ef47426-cc1b-4e3f-be23-b61a59d24224" width="600" height="200"> </p>
+
+## Deleção dos recursos criados
+
+~~~~
+kubectl delete -f pod-template.yaml
+kubectl delete service pod-nginx
+~~~~
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/3d84cf2e-76d9-4c8c-aadf-de79ce86e6b3" width="600" height="200"> </p>
 
 ## Resultado esperado
 Até aqui é esperado que o conhecimento esteja mais fixado em como é composta a aquitetura do K8s e como é utilizada a API do K8s *Kubectl* para criação e manipulação de recursos dentro do Cluster.
