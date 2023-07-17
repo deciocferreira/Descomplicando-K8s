@@ -109,7 +109,7 @@ kubectl apply -f pod-volumeEpdir.yaml
 
 kubectl get pods
 
-kubectl describe pods podnginx
+kubectl describe pods podprometheus
 
 kubectl exec -it podprometheus --sh
 ~~~
