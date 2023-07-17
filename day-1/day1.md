@@ -49,7 +49,7 @@ vim k8s-cluster
 
 - Criação do Cluster
 ~~~
-Kind create Cluster --name main --config k8s-cluster.yaml
+kind create cluster --name main --config k8s-cluster.yaml
 ~~~
 
 <p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/3b21bc86-7861-4e5e-b814-483ea033a1c5" width="900" height="350"> </p>
