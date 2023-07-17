@@ -69,7 +69,7 @@ kubectl attach podnginx -c podprometheus
 
 kubectl exec podnginx -c podnginx -- ls
 
-kubectl exec podnginx -c podprometheus -it sh
+kubectl exec podnginx -c podprometheus -it -- sh
 ~~~
 
 <p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/b479bae3-47af-4d9f-9177-81f5bc063354" width="800" height="500"> </p> 
@@ -83,19 +83,36 @@ kubectl exec podnginx -c podprometheus -it sh
 ## Limitando o uso de CPU e Memória de um Pod
 
 ~~~
-vu pod-recursolimitado.yaml
+vi pod-recursolimitado.yaml
 
 kubectl apply -f podrecursolimitado.yaml
 
-kubectl exec podnginx -c podnginx -- ls
+kubectl get pods
 
-kubectl exec podnginx -c podprometheus -it sh
+kubectl describe pods podnginx
+
+stress --vm 1 --vm-bytes 120M (realizar comando em outro terminal conectado ao pod)
 ~~~
 
 <p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/73c57cd0-84bc-4866-ab3a-2ab844cdd953" width="800" height="500"> </p> 
 
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/af1036e5-b47e-447f-aac3-78954a2c1074" width="800" height="500"> </p>
 
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/5822bbbe-a9fc-4bb6-91ba-39d49ac49a42" width="800" height="500"> </p>
+  
+##  Criando um volume EmptyDir
 
+~~~
+vi pod-volumeEpdir.yaml
+
+kubectl apply -f pod-volumeEpdir.yaml
+
+kubectl get pods
+
+kubectl describe pods podnginx
+
+stress --vm 1 --vm-bytes 120M (realizar comando em outro terminal conectado ao pod)
+~~~
   
 ## Resultado esperado
 Até aqui é esperado que o conhecimento esteja mais fixado na criação de pods, interpretação de arquivos manifestaos(yaml) para criar pods com limitações de recursos, pods multicontainers e pods com volumes nos containers dentro do Cluster.
