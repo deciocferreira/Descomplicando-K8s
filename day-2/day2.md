@@ -111,8 +111,10 @@ kubectl get pods
 
 kubectl describe pods podnginx
 
-stress --vm 1 --vm-bytes 120M (realizar comando em outro terminal conectado ao pod)
+kubectl exec -it podprometheus --sh
 ~~~
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/e1280bb4-1852-4efc-92f7-62a6070039f4" width="800" height="500"> </p>
   
 ## Resultado esperado
-Até aqui é esperado que o conhecimento esteja mais fixado na criação de pods, interpretação de arquivos manifestaos(yaml) para criar pods com limitações de recursos, pods multicontainers e pods com volumes nos containers dentro do Cluster.
+Até aqui é esperado que o conhecimento esteja mais fixado na criação de pods, interpretação de arquivos manifestaos(yaml) para criar pods com limitações de recursos, pods multicontainers, pods com volumes nos containers dentro do Cluster e realizar conexões a contaners em execução com processos iterativos.
