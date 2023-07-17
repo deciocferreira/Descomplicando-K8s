@@ -9,7 +9,9 @@
 
 ## kubectl get pods/kubectl describe pods 
 
-<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/3d84cf2e-76d9-4c8c-aadf-de79ce86e6b3" width="600" height="200"> </p>
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/a0b7ae17-aaa1-4d8c-9b09-1af54ef6faa2" width="800" height="500"> </p>
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/73b4205a-c90b-4ad6-bb04-a30a0ab985d8" width="800" height="500"> </p>
 
 ## Resultado esperado
-Até aqui é esperado que o conhecimento esteja mais fixado em como é composta a aquitetura do K8s e como é utilizada a API do K8s *Kubectl* para criação e manipulação de recursos dentro do Cluster.
+Até aqui é esperado que o conhecimento esteja mais fixado na criação de pods, interpretação de arquivos manifestaos(yaml) para criar pods com limitações de recursos, pods multicontainers e pods com volumes nos containers dentro do Cluster.
