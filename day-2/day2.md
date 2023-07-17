@@ -58,11 +58,44 @@ kubectl describe pods podnginx
 
 <p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/a7203857-8470-436d-9f1b-c066c5eae8ef" width="800" height="500"> </p> 
 
-<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/6ae46970-6a65-4d28-b862-bef6dedb1ee7" width="800" height="500"> </p> 
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/4f0cbedd-b076-468d-9d0b-8af121acbb5b" width="800" height="500"> </p> 
 
 - Execução dos comandos kubectl attach/kubectl exec
 
-  
+~~~
+kubectl attach podnginx -c podnginx
 
+kubectl attach podnginx -c podprometheus
+
+kubectl exec podnginx -c podnginx -- ls
+
+kubectl exec podnginx -c podprometheus -it sh
+~~~
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/b479bae3-47af-4d9f-9177-81f5bc063354" width="800" height="500"> </p> 
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/f466ec14-e519-49aa-bd71-b2f81dc8ab3b" width="800" height="500"> </p> 
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/3c092c9b-7547-4b08-a3d9-8a0cbb5ad22a" width="800" height="500"> </p> 
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/9b60bbaa-8d31-499b-a370-8123a7153809" width="800" height="500"> </p> 
+
+## Limitando o uso de CPU e Memória de um Pod
+
+~~~
+vu pod-recursolimitado.yaml
+
+kubectl apply -f podrecursolimitado.yaml
+
+kubectl exec podnginx -c podnginx -- ls
+
+kubectl exec podnginx -c podprometheus -it sh
+~~~
+
+<p align="left"> <image src="https://github.com/deciocferreira/Descomplicando-K8s/assets/12403699/73c57cd0-84bc-4866-ab3a-2ab844cdd953" width="800" height="500"> </p> 
+
+
+
+  
 ## Resultado esperado
 Até aqui é esperado que o conhecimento esteja mais fixado na criação de pods, interpretação de arquivos manifestaos(yaml) para criar pods com limitações de recursos, pods multicontainers e pods com volumes nos containers dentro do Cluster.
