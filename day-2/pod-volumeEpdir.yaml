@@ -1,0 +1,15 @@
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: prometheus
+spec: 
+  containers: 
+  - name: prometheus
+    image: deciocferreira/prometheus:1.0
+    volumeMounts: 
+    - name: volume-epdir 
+      mountPath: /FS 
+  volumes: 
+  - name: volume-epdir 
+    emptyDir: 
+      sizeLimit: 256Mi 
