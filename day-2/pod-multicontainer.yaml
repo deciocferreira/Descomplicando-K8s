@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podnginx
+  labels:
+    run: nginxserver
+spec:
+  containers:
+  - name: podnginx
+    image: deciocferreira/nginx:latest
+    ports:
+    - containerPort: 80
+  - name: podapache
+    image: deciocferreira/apache:1.0
+    ports:
+      - containerPort: 8080
