@@ -10,19 +10,19 @@ Leitura complementar resumida da prática está neste outro repo: [KubernetesLab
 ## <a name=“section”><a/> Conteúdo 
 [Day-1](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-1/day1.md#-k8s-)
 
-[Day-2](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-2/day1.md#-k8s-)
+[Day-2](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-2/day2.md#-k8s-)
 
-[Day-3](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-3/day1.md#-k8s-)
+[Day-3](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-3/day3.md#-k8s-)
 
-[Day-4](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-4/day1.md#-k8s-)
+[Day-4](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-4/day4.md#-k8s-)
 
-[Day-5](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-5/day1.md#-k8s-)
+[Day-5](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-5/day5.md#-k8s-)
 
-[Day-6](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-6/day1.md#-k8s-)
+[Day-6](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-6/day6.md#-k8s-)
 
-[Day-7](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-7/day1.md#-k8s-)
+[Day-7](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-7/day7.md#-k8s-)
 
-[Day-8](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-8/day1.md#-k8s-)
+[Day-8](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-8/day8.md#-k8s-)
 
-[Day-9](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-9/day1.md#-k8s-)
+[Day-9](https://github.com/deciocferreira/Descomplicando-K8s/blob/main/day-9/day9.md#-k8s-)
 
